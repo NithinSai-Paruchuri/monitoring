@@ -1,0 +1,22 @@
+- headers:
+    user-agent: fetch-synthetic-monitor
+  method: GET
+  name: fetch_index_page
+  url: https://fetch.com/
+
+- headers:
+    user-agent: fetch-synthetic-monitor
+  method: GET
+  name: fetch_careers_page
+  url: https://fetch.com/careers
+
+- body: '{"foo": "bar"}'
+  headers:
+    content-type: application/json
+    user-agent: fetch-synthetic-monitor
+  method: POST
+  name: fetch_some_fake_post_endpoint
+  url: https://fetch.com/some/post/endpoint
+
+- name: fetch_rewards_index_page
+  url: https://www.fetchrewards.com
